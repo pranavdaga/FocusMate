@@ -51,7 +51,7 @@ initializeSocket(io);
 
 // Connect to MongoDB and start server
 const PORT = process.env.PORT || 5000;
-const MONGODB_URI = process.env.MONGO_URI;
+const MONGODB_URI = process.env.MONGODB_URI;
 
 mongoose.connect(MONGODB_URI)
   .then(() => {
